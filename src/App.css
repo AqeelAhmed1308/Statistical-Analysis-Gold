@@ -6,13 +6,16 @@
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: rgba(251, 191, 36, 0.1);
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: rgba(180, 83, 9, 0.5);
   border-radius: 10px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: rgba(180, 83, 9, 0.8);
 }
@@ -22,4 +25,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+html {
+  zoom: 0.8;
+  -moz-transform: scale(0.8);
+  -moz-transform-origin: 0 0;
 }
