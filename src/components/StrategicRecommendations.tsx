@@ -10,20 +10,20 @@ const AnimatedTitle = ({ text }: { text: string }) => (
 
 const RecCard = ({ title, icon: Icon, items, color, delay }: any) => {
   const colors: any = {
-    rose: { 
-      border: 'border-rose-300', icon: 'text-rose-600', iconBg: 'bg-rose-100', 
+    rose: {
+      border: 'border-rose-300', icon: 'text-rose-600', iconBg: 'bg-rose-100',
       title: 'text-rose-900', glow: 'from-rose-400 to-pink-600', bullet: 'text-rose-600'
     },
-    blue: { 
-      border: 'border-blue-300', icon: 'text-blue-600', iconBg: 'bg-blue-100', 
+    blue: {
+      border: 'border-blue-300', icon: 'text-blue-600', iconBg: 'bg-blue-100',
       title: 'text-blue-900', glow: 'from-blue-400 to-indigo-600', bullet: 'text-blue-600'
     },
-    amber: { 
-      border: 'border-amber-300', icon: 'text-amber-600', iconBg: 'bg-amber-100', 
+    amber: {
+      border: 'border-amber-300', icon: 'text-amber-600', iconBg: 'bg-amber-100',
       title: 'text-amber-900', glow: 'from-amber-400 to-orange-600', bullet: 'text-amber-600'
     }
   };
-  
+
   const c = colors[color];
 
   return (
@@ -37,7 +37,7 @@ const RecCard = ({ title, icon: Icon, items, color, delay }: any) => {
       className={`relative flex-1 flex flex-col bg-white/80 backdrop-blur-xl border-[3px] ${c.border} rounded-[2.5rem] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden group transition-all will-change-transform`}
     >
       {/* Background Gold Bar Watermark - MORE BLUR */}
-      <div 
+      <div
         className="absolute inset-0 z-0 opacity-5"
         style={{
           backgroundImage: `url(${goldBarBg})`,
@@ -47,17 +47,17 @@ const RecCard = ({ title, icon: Icon, items, color, delay }: any) => {
           filter: 'blur(8px)'
         }}
       />
-      
+
       {/* Top Highlight Line with Glow */}
       <div className={`absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r ${c.glow}`} />
       <div className={`absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r ${c.glow} blur-sm animate-pulse`} />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col h-full">
-        
+
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-5">
-          <motion.div 
+          <motion.div
             className={`p-4 rounded-3xl ${c.iconBg} ${c.icon} shadow-md border-2 border-white mb-3`}
             whileHover={{ scale: 1.1, rotate: 5 } as any}
           >
@@ -69,8 +69,8 @@ const RecCard = ({ title, icon: Icon, items, color, delay }: any) => {
         {/* List Items */}
         <div className="flex-1 flex flex-col justify-center space-y-5">
           {items.map((item: any, i: number) => (
-            <motion.div 
-              key={i} 
+            <motion.div
+              key={i}
               className="flex gap-3"
               initial={{ opacity: 0, x: -20 } as any}
               whileInView={{ opacity: 1, x: 0 } as any}
@@ -95,27 +95,17 @@ const RecCard = ({ title, icon: Icon, items, color, delay }: any) => {
 const StrategicRecommendations = () => {
   return (
     <div className="min-h-screen bg-[#fdfcf8] relative overflow-hidden flex flex-col py-12 font-sans">
-      
+
       {/* Background Glow */}
       <div className="absolute top-0 left-1/4 w-[60vw] h-[60vw] bg-amber-100/30 rounded-full blur-[150px] pointer-events-none" />
 
       {/* Main Container */}
       <div className="relative z-10 w-[95%] max-w-[1800px] mx-auto flex-1 flex flex-col">
-        
+
         {/* Header */}
         <div className="text-center mb-8">
-          <motion.div 
-            initial={{ scale: 0, opacity: 0 } as any}
-            whileInView={{ scale: 1, opacity: 1 } as any}
-            viewport={{ once: false } as any}
-            transition={{ duration: 0.4, type: "spring" } as any}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/80 border border-amber-200 text-amber-700 text-xs font-black uppercase tracking-[0.3em] mb-4 shadow-sm"
-          >
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            Step 6: Recommendations
-          </motion.div>
-          
-          <motion.h2 
+
+          <motion.h2
             initial={{ opacity: 0, y: 20 } as any}
             whileInView={{ opacity: 1, y: 0 } as any}
             viewport={{ once: false } as any}
@@ -128,69 +118,69 @@ const StrategicRecommendations = () => {
 
         {/* 3-Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 flex-1 min-h-0 pb-6">
-          
+
           {/* For Weddings */}
-          <RecCard 
+          <RecCard
             title="For Weddings"
             icon={Heart}
             color="rose"
             delay={0.1}
             items={[
-              { 
-                head: "Best Time to Buy", 
-                desc: "Buy in Jan/Feb. Rates are usually much cheaper in these months compared to Oct-Nov wedding season." 
+              {
+                head: "Best Time to Buy",
+                desc: "Buy in Jan/Feb. Rates are usually much cheaper in these months compared to Oct-Nov wedding season."
               },
-              { 
-                head: "Plan 12 Months Ahead", 
-                desc: "If wedding is in December, buy gold in January. Save more than Rs 50,000 per tola by buying early." 
+              {
+                head: "Plan 12 Months Ahead",
+                desc: "If wedding is in December, buy gold in January. Save more than Rs 50,000 per tola by buying early."
               },
-              { 
-                head: "Avoid Peak Season", 
-                desc: "Never buy in October & November. Prices are at yearly highs due to wedding demand." 
+              {
+                head: "Avoid Peak Season",
+                desc: "Never buy in October & November. Prices are at yearly highs due to wedding demand."
               }
             ]}
           />
 
           {/* For Traders */}
-          <RecCard 
+          <RecCard
             title="For Traders"
             icon={TrendingUp}
             color="blue"
             delay={0.2}
             items={[
-              { 
-                head: "Simple Profit Strategy", 
-                desc: "Buy when cheap in January, sell when expensive in October. This cycle repeats every year." 
+              {
+                head: "Simple Profit Strategy",
+                desc: "Buy when cheap in January, sell when expensive in October. This cycle repeats every year."
               },
-              { 
-                head: "Protect Your Money", 
-                desc: "Use Stop-Loss. Market is risky and can drop 5% in one day. Always set limits." 
+              {
+                head: "Protect Your Money",
+                desc: "Use Stop-Loss. Market is risky and can drop 5% in one day. Always set limits."
               },
-              { 
-                head: "Watch the News", 
-                desc: "Price changes instantly based on political news, IMF deals, and Dollar rate. Stay alert." 
+              {
+                head: "Watch the News",
+                desc: "Price changes instantly based on political news, IMF deals, and Dollar rate. Stay alert."
               }
             ]}
           />
 
           {/* Universal Advice */}
-          <RecCard 
+          <RecCard
             title="Universal Advice"
             icon={ShieldCheck}
             color="amber"
             delay={0.3}
             items={[
-              { 
-                head: "Don't Store Cash", 
-                desc: "Gold increased 268%, Rupee lost value. Cash in cupboard is the worst way to save." 
+              {
+                head: "Don't Store Cash",
+                desc: "Gold increased 268%, Rupee lost value. Cash in cupboard is the worst way to save."
               },
-              { 
-                head: "Expect Big Changes", 
-                desc: "Stable days are gone. Be ready for price swings of 1 Lakh Rupees within a year." 
+              {
+                head: "Expect Big Changes",
+                desc: "Stable days are gone. Be ready for price swings of 1 Lakh Rupees within a year."
               },
-              { 
-                head: "Have Patience (Sabar)", 
-                desc: "Short-term drops happen, but 6-year data shows it always goes up. Hold 3+ years for best profit." 
+              {
+                head: "Have Patience (Sabar)",
+                desc: "Short-term drops happen, but 6-year data shows it always goes up. Hold 3+ years for best profit."
               }
             ]}
           />

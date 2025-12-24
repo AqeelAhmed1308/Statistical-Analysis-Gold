@@ -187,9 +187,9 @@ const AnalyticsInterpretation = () => {
                 {/* Smaller Icon Container */}
                 <div className="p-2.5 bg-blue-100 rounded-xl text-blue-700 shrink-0 mt-1 shadow-inner"><TrendingUp size={24} /></div>
                 <div>
-                  <h4 className="text-xl lg:text-2xl font-black text-slate-900 mb-1">2026: Rs 587,486</h4>
+                  <h4 className="text-xl lg:text-2xl font-black text-slate-900 mb-1">2026: Rs 580,000</h4>
                   <p className="text-lg lg:text-x text-slate-700 leading-snug pl-4 border-l-2 border-blue-200">
-                    Anticipated continuation of the bullish trend. This marks a likely <span className="font-black text-green-600 bg-green-50 px-1 rounded">12-15% increase</span> from current levels.
+                    The trend is positive and prices will rise further. So we can expect a <span className="font-black text-green-600 bg-green-50 px-1 rounded">12-15% increase</span> from current Prices.
                   </p>
                 </div>
               </div>
@@ -197,9 +197,9 @@ const AnalyticsInterpretation = () => {
               <div className="flex items-start gap-4">
                 <div className="p-2.5 bg-blue-100 rounded-xl text-blue-700 shrink-0 mt-1 shadow-inner"><TrendingUp size={24} /></div>
                 <div>
-                  <h4 className="text-xl lg:text-2xl font-black text-slate-900 mb-1">2027: Rs 757,218</h4>
+                  <h4 className="text-xl lg:text-2xl font-black text-slate-900 mb-1">2027: Rs 760,000</h4>
                   <p className="text-lg lg:text-x text-slate-700 leading-snug pl-4 border-l-2 border-blue-200">
-                    A significant milestone where prices may solidify new support levels. Driven by growing international demand.
+                    This is a major milestone where prices are likely to find strong support. This is happening because of increasing demand from the international market.
                   </p>
                 </div>
               </div>
