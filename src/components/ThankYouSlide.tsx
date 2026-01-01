@@ -75,7 +75,7 @@ const ThankYouSlide = () => {
         className="absolute bottom-8 text-center z-10"
       >
         <p className="text-slate-400 text-sm font-bold uppercase tracking-widest">
-            © 2025 All Rights Reserved
+            © 2025 All Rights Reserved - Made by WebdDou 💻 
         </p>
       </motion.div>
 

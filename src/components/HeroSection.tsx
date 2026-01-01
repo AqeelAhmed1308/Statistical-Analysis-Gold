@@ -7,10 +7,7 @@ import goldBarImage from "../assets/images/gold-bars-1.png";
 // Team Data
 const TEAM_MEMBERS = [
   { name: "Aqeel Ahmed", image: "" }, 
-  { name: "Farhan Ali", image: "" }, 
-  { name: "Urooj Hanif", image: "" },
-  { name: "Bilal ", image: "" }, 
-  { name: "Rahat ", image: "" }
+  { name: "Muhammad Ali", image: "" }, 
 ];
 
 const AnimatedTitle = ({ text }: { text: string }) => (
@@ -68,7 +65,7 @@ const HeroSection = () => {
             />
             
             <p className="text-amber-700 tracking-[0.3em] font-extrabold text-xs uppercase">
-              Probability & Statistics Project
+              SMIU X TECNOFEST
             </p>
             
             {/* Heading 1 */}
@@ -102,10 +99,10 @@ const HeroSection = () => {
             whileInView={{ y: 0, opacity: 1, scale: 1 }}
             viewport={{ once: false }}
             transition={{ delay: 0.3, duration: 0.5, type: "spring", stiffness: 100 }}
-            className="bg-white/70 backdrop-blur-xl border-2 border-amber-100 p-6 rounded-[2rem] shadow-xl w-full max-w-2xl hover:border-amber-300 transition-colors"
+            className="bg-white/70 backdrop-blur-xl border-2 border-amber-100 p-6 rounded-[2rem] shadow-xl md:max-w-sum hover:border-amber-300 transition-colors"
           >
             <h3 className="text-xs font-extrabold text-slate-400 uppercase tracking-widest mb-4 border-b-2 border-amber-100 pb-2">
-              Our Team Members
+              WebDou Team
             </h3>
             
             <div className="flex justify-around gap-3">
@@ -136,15 +133,6 @@ const HeroSection = () => {
             </div>
 
             {/* Supervisor Badge */}
-            <div className="mt-5 flex flex-col md:flex-row justify-between items-center bg-zinc-100/80 rounded-xl p-3 border border-zinc-200 gap-3">
-              <span className="text-xs text-zinc-500 italic font-semibold">Fall 2025 Session</span>
-              <div className="flex items-center space-x-2">
-                <span className="text-[0.65rem] uppercase tracking-wide font-bold text-zinc-500">Guided By:</span>
-                <span className="px-4 py-1.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg text-xs font-bold shadow-md tracking-wider">
-                  Miss Nazia Sultana
-                </span>
-              </div>
-            </div>
             
           </motion.div>
         </div>

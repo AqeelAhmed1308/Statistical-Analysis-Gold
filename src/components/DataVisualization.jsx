@@ -181,7 +181,7 @@ const DataVisualization = () => {
 
         {/* FIX 2: Added relative & z-10 to Header to sit ON TOP of fog */}
         <div className="text-center shrink-0 mb-2 px-4 relative z-10">
-            <h2 className="text-4xl lg:text-6xl font-black text-slate-800 leading-none">
+            <h2 className="text-4xl mb-5 mt-5 lg:text-6xl font-black text-slate-800 leading-none">
                 DATA <AnimatedTitle text="VISUALIZATION" />
             </h2>
         </div>
