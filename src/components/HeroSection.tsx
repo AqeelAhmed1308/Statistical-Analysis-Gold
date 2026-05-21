@@ -8,9 +8,7 @@ import goldBarImage from "../assets/images/gold-bars-1.png";
 const TEAM_MEMBERS = [
   { name: "Aqeel Ahmed", image: "" }, 
   { name: "Farhan Ali", image: "" }, 
-  { name: "Urooj Hanif", image: "" },
-  { name: "Bilal ", image: "" }, 
-  { name: "Rahat ", image: "" }
+  { name: "Bilal ", image: "" },
 ];
 
 const AnimatedTitle = ({ text }: { text: string }) => (
@@ -68,7 +66,7 @@ const HeroSection = () => {
             />
             
             <p className="text-amber-700 tracking-[0.3em] font-extrabold text-xs uppercase">
-              Probability & Statistics Project
+              Advanced Statistics Project
             </p>
             
             {/* Heading 1 */}
@@ -137,11 +135,11 @@ const HeroSection = () => {
 
             {/* Supervisor Badge */}
             <div className="mt-5 flex flex-col md:flex-row justify-between items-center bg-zinc-100/80 rounded-xl p-3 border border-zinc-200 gap-3">
-              <span className="text-xs text-zinc-500 italic font-semibold">Fall 2025 Session</span>
+              <span className="text-xs text-zinc-500 italic font-semibold">Spring 2026 Session</span>
               <div className="flex items-center space-x-2">
                 <span className="text-[0.65rem] uppercase tracking-wide font-bold text-zinc-500">Guided By:</span>
                 <span className="px-4 py-1.5 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-lg text-xs font-bold shadow-md tracking-wider">
-                  Miss Nazia Sultana
+                  Miss Nighat
                 </span>
               </div>
             </div>
